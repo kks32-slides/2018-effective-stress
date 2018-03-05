@@ -73,6 +73,7 @@ body {
  * OTHER
  *********************************************/
 .reveal p {
+  font-size: 0.8em;
   margin: 20px 0;
   line-height: 1.3; }
 
