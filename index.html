@@ -35,7 +35,6 @@
             <!-- Section -->
             <section>
                <section>
-                  <h2>Building the perfect sandcastle</h2>
                   <h3>An introduction to effective stress</h3>
                   <div style="text-align: center; width: 100%;">
                      <span style="width: 10%; text-align: center;">
@@ -45,7 +44,7 @@
                      Krishna Kumar, <a href="mailto:kks32@cam.ac.uk">kks32@cam.ac.uk</a>
                   </p>
                   <div style="clear: both; width: 100%">
-                    <p>University of Nottingham, UK<br/>8th March 2018</p>
+                    <!--<p>University of Nottingham, UK<br/>8th March 2018</p>-->
                   </div>
                </section>
                <!-- Learning objectives -->
@@ -55,15 +54,40 @@
                     <li>Stresses in soil</li>
                     <li>Terzaghi’s principle of effective stress</li>
                     <li>Calculating in-situ stresses</li>
-                    <li>Building the perfect sandcastle</li>
+                    <!--<li>Building the perfect sandcastle</li>-->
                   </ul>
                </section>
-               <!--Location of a sandcastle-->
+             </section>
+             <section>
+               <!--Everyone is a geotechnical engineer!-->
                <section>
-                 <h3>Where should we build the sandcastle?</h3>
-                 <figure>
-                   <img style = "border:0; box-shadow: 0 0 0px;" src="images/beach.png" width="80%">
-                 </figure>
+                 <h3>Everyone is a geotechnical engineer!</h3>
+                 <div style="float: left; width: 50%;">
+                   <figure>
+                     <img style = "border:0; box-shadow: 0 0 0px;" src="images/kids-sandcastle.jpg" width="100%">
+                   </figure>
+                 </div>
+                 <div style="float: right; width: 50%; text-align: left;">
+                   <figure>
+                     <img style = "border:0; box-shadow: 0 0 0px;" src="images/dog-digging.jpg" width="84%">
+                   </figure>
+                 </div>
+               </section>
+               <!-- Stress in solid vs soil -->
+               <section>
+                 <h3>Stresses in solid</h3>
+                 <div style="float: left; width: 50%;">
+                   <figure>
+                     <img style = "border:0; box-shadow: 0 0 0px;" src="images/axial-stress.png" width="100%">
+                   </figure>
+
+                 </div>
+                 <div style="float: right; width: 50%;">
+                   <figure>
+                     <img style = "border:0; box-shadow: 0 0 0px;" src="images/photoelastic-stress.jpg" width="80%">
+                     <figcaption>Stresses on a photoelastic material</figcaption>
+                   </figure>
+                 </div>
                </section>
                <!--Stresses in soil-->
                <section>
@@ -85,7 +109,7 @@
                        B: Low stress region on particle
                      </span>
                    </p>
-                   <p class="fragment">$$\sigma' \approx 0$$</p>
+                   <p class="fragment">$$\sigma' \approx 200 kPa$$</p>
                    <p class="fragment">
                      <span class="fragment highlight-green">
                        C: Void
@@ -99,15 +123,38 @@
                  <h2>Stresses in soil</h2>
                  <figure>
                    <img style = "border:0; box-shadow: 0 0 0px;" src="images/stresses-soil-2.png" width="60%">
+                   <figcaption>Average stress over a small region of say 10x10x10 grains,
+                   where solid (skeleton), and fluid (voids) co-exist at each "point".
+                   </figcaption>
                  </figure>
                  <aside class="notes">Stress should not be defined at a mathematical point,
                    define an average value of stress over a small region of say 10x10x10 grains,
                    where solid (skeleton), and fluid (voids) co-exist at each "point".
                  </aside>
                </section>
+               <!--Effective stress model-->
+               <section>
+                 <h2>Effective stress model</h2>
+                 <div style="float: left; width: 45%;">
+                   <figure>
+                     <img style = "border:0; box-shadow: 0 0 0px;" src="images/effective-stress-model.png" width="100%">
+                   </figure>
+                 </div>
+                 <div style="float: right; width: 50%; text-align: left;">
+                   <p class="fragment">Total normal stress: $\sigma = P / A$</p>
+                   <p class="fragment">for equilibrium in the direction normal
+to XX</p>
+                   <p class="fragment">$$P = \sum N' + \mathit{u} A$$</p>
+
+                   <p class="fragment">$$P / A = \sum N' / A + \mathit{u}$$</p>
+
+                   <p class="fragment">$$\sigma =\sigma ' + \mathit{u}$$</p>
+
+                 </div>
+               </section>
                <!--Effective Stresses in soil-->
                <section>
-                 <h4>Terzaghi's principle of effective stress (1925)</h4>
+                 <h4>Terzaghi's principle of effective stress (1923)</h4>
                  <figure>
                    <img style = "border:0; box-shadow: 0 0 0px;" src="images/effective-stress.png" width="100%">
                    <figcaption>
@@ -131,6 +178,18 @@
                    <figcaption>source: simple shear in granular materials <a href="https://www.youtube.com/watch?v=Z6rvdkI4T8I">https://www.youtube.com/watch?v=Z6rvdkI4T8I</a></figcaption>
                </figure>
                </section>
+               <!--Effective stresses in a sandcastle-->
+               <section>
+                 <h2>Effective stresses in a sandcastle</h2>
+
+                 <figure>
+                   <img style = "border:0; box-shadow: 0 0 0px;" src="images/sandcastle-meniscus.png" width="65%">
+               </figure>
+               <aside class="notes">
+                 Curved meniscii give <span class="red">negative</span> pore-pressure, Total Stress is <b>zero</b>
+                 Effective Stress positive.
+               </aside>
+               </section>
                <!--Strength of soil-->
                <section>
                  <h2>Strength of soil</h2>
@@ -146,41 +205,49 @@
                    <figure>
                      <img style = "border:0; box-shadow: 0 0 0px;" src="images/porepressure.png" width="65%">
                      <figcaption>
-                      Porepressure changes the rate at which effective stress increases with depth.
+                      Porepressure has an indirect effect on the strength, by altering the effective stresses.
                      </figcaption>
                    </figure>
                  </div>
+                 <aside class="notes">
+                   If we look at soil at a micro-scale, there is usually nothing
+                   physically gluing the particles together, the particles are
+                   free to slide over each other under the actions of the stresses
+                   applied to them. Soil gets its strength from friction and
+                   interlocking between soil particles. If we look at two planes
+                   of spherical particles, as shown in figure, it can be seen
+                   that in order to shear along the slip-plane, we mobilise
+                   strength from sliding between particles (friction) and we
+                   must provide enough force to make the particles in the upper
+                   layer rise up over those in the lower layer (interlocking).
+                   Both of these forces are influenced by the stresses acting
+                   on the particles (effective stress), but not by the stresses
+                   acting within the fluid (pore pressure). The integral of the
+                   pore pressures acting on the curved surface of the particle
+                   will give an upwards force equal to the buoyancy of the particle
+                   and hence only the buoyant unit weight of the particles will
+                   lead to an increase in effective stress with depth.
+
+                   Pore pressure can, however, play a role in the strength of soils in that it can influence the value of the effective stress. If we consider the stress state on the surface of a sandcastle, then in the direction perpendicular to the surface there is no applied total stress. Fluid within the pores of the damp soil tends to concentrate at the particle contacts, as shown in Fig.3. The curved menisci on these small droplets of water cause the water to have a negative (gauge) pore-pressure. From Terzaghi’s formula, this then causes the effective stress to be positive and hence enough strength to be available for the sandcastle to stand. If extra water is added to the pores by the incoming tide, the pores fill, the menisci disappear and the fluid pressure returns to zero. The strength of the soil falls, the slopes become unstable and the sandcastle collapses.
+                 </aside>
                </section>
-               <!--Effective stresses in a sandcastle-->
+               <!--Location of a sandcastle-->
                <section>
-                 <h2>Effective stresses in a sandcastle</h2>
+                 <h3>Where should we build a sandcastle?</h3>
                  <figure>
-                   <img style = "border:0; box-shadow: 0 0 0px;" src="images/sandcastle-meniscus.png" width="65%">
-               </figure>
-               <aside class="notes">
-                 Curved meniscii give <span class="red">negative</span> pore-pressure, Total Stress is <b>zero</b>
-                 Effective Stress positive.
-               </aside>
+                   <img style = "border:0; box-shadow: 0 0 0px;" src="images/beach.png" width="80%">
+                 </figure>
                </section>
              </section>
             <!-- Summary -->
             <section>
-               <!-- Thank you! -->
-               <section  data-background="images/themes/cb-geo-banner.png" data-background-size="100%" data-background-opacity="50%">
-                  <br/>
-                  <h1><font color="yellow">Thank you!</font></h1>
-                  <br/><br/>
-                  <h2>
-                     <font color="white">
-                     Krishna Kumar
-                     </font>
-                  </h2>
-                  <h3>
-                     <font color="white">
-                     kks32@cam.ac.uk
-                     </font>
-                  </h3>
-               </section>
+               <h2>Summary</h2>
+               <ul>
+                 <li>Effective stress represents the stresses carried by soil grains</li>
+                 <li>The remainder of the stress is carried by the pore fluid</li>
+                 <li>Effective stress, not total stress is what governs the behaviour of soils strength and stiffness</li>
+                 <li>Capillary suction can influence soil's effective stresses</li>
+               </ul>
             </section>
             <!-- Special thanks to Chitra atthai! -->
          </div>
