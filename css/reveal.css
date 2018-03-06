@@ -32,6 +32,10 @@ html, body, .reveal div, .reveal span, .reveal applet, .reveal object, .reveal i
 .reveal footer, .reveal header, .reveal hgroup, .reveal menu, .reveal nav, .reveal section {
   display: block; }
 
+.reveal figcaption {
+  font-size: 0.7em;
+}
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
